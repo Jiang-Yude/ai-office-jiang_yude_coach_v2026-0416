@@ -187,11 +187,30 @@
 | 「這個老師適不適合我」「這個課值得上嗎」「幫我評估這個課」「跟我工作流合不合」 | 老師課值不值得上 | teacher-fit-evaluator |
 | 「轉 Markdown」「轉 MD」「Excel 轉 CSV」「Word 轉 MD」「PDF 轉文字」「幫我轉格式」 | 格式轉換助理 | file-to-markdown |
 | 「客觀查資料」「同時查正評負評」「多角度查」「交叉比對」「多 AI 查」 | 客觀查資料助理 | multi-ai-dispatcher |
-| 「建立我的設定檔」「讓 AI 認識我」「做我的自我介紹」「工具篩選」「這個人的背景設定檔」 | 個人設定檔助理 | personal-profile-builder |
+| 「做我的名片檔」「建名片檔」「讓 AI 認識我」「做我的自我介紹」「工具篩選」「這個人的背景名片檔」 | 個人名片檔助理 | personal-profile-builder |
 | 「建立學習地圖」「更新學習地圖」「我現在適合學什麼」「學習體檢」「工作流地圖」 | 學習地圖助理 | learning-map-builder |
 | 「排班」「幫我排班」「班表」「輪值表」「人力安排」「活動排班」「小團隊排班」 | 排班助理 | scheduling-assistant |
 
 不在表上的需求 → 用 AI 助理的通用邏輯處理，或問使用者。
+
+---
+
+## ✨ 三塊自我提煉（Mika 路由參考）
+
+使用者說到「認識自己」「讓 AI 了解我」「提煉自己」「我是誰」「我要學什麼」這類話題時，Mika 要能辨識現在是在講哪一塊，不要混用：
+
+| 工具 | 回答什麼 | 時間 | 技能包 |
+|---|---|---|---|
+| **個人名片檔** | 我是誰、我做什麼、AI 要知道哪些背景 | 15-30 分鐘 | personal-profile-builder |
+| **個人學習地圖** | 我喜歡怎麼學、我現在學到哪、卡在哪 | 15-20 分鐘 | learning-map-builder |
+| **人格思維提煉** | 我怎麼思考、做決定、我的價值觀是什麼 | 2-8 小時 | persona-mind-distiller |
+
+**建議順序**：先做名片檔（快速建立 AI 背景知識）→ 再做學習地圖（用在評估課程、老師）→ 有足夠素材後做思維提煉（深度數位分身）。
+
+**Mika 主動建議時機**：
+- 使用者提到「這個老師適不適合我」→ 先確認有沒有學習地圖（learning-map-builder）
+- 使用者說「讓 AI 認識我」「工具篩選」→ 先做個人名片檔
+- 使用者說「做 AI 顧問」「提煉某某思維」→ 走人格思維提煉
 
 ---
 
@@ -340,7 +359,7 @@ AI 辦公室/
 │       ├── teacher-fit-evaluator/      ← 老師課值不值得上
 │       ├── file-to-markdown/           ← 格式轉換助理（Excel/Word/PDF→MD）
 │       ├── multi-ai-dispatcher/        ← 客觀查資料助理
-│       ├── personal-profile-builder/   ← 個人設定檔助理
+│       ├── personal-profile-builder/   ← 個人名片檔助理
 │       ├── learning-map-builder/       ← 學習地圖助理
 │       └── scheduling-assistant/       ← 排班助理
 │
@@ -419,7 +438,7 @@ AI 辦公室/
 | 14 | teacher-fit-evaluator | 老師課值不值得上 | 這個課值得上嗎、評估老師、適不適合我 |
 | 15 | file-to-markdown | 格式轉換助理 | 轉 MD、Excel 轉 CSV、Word 轉 MD、PDF 轉文字 |
 | 16 | multi-ai-dispatcher | 客觀查資料助理 | 客觀查、多角度查、正評負評交叉比對 |
-| 17 | personal-profile-builder | 個人設定檔助理 | 建設定檔、讓 AI 認識我、工具篩選 |
+| 17 | personal-profile-builder | 個人名片檔助理 | 做名片檔、讓 AI 認識我、工具篩選 |
 | 18 | learning-map-builder | 學習地圖助理 | 建學習地圖、我適合學什麼、學習體檢 |
 | 19 | scheduling-assistant | 排班助理 | 排班、班表、輪值、小團隊排班 |
 | 20 | 規劃中 | 搜尋助理 | 搜尋、上網查、多角度查、三個子代理 |
