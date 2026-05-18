@@ -5,29 +5,30 @@
 
 ---
 
-## ⚡ 三分鐘快速啟動
+## ⚡ 一分鐘啟動
 
-### 方法 A：直接從 GitHub 拷貝（推薦）
+最簡單的版本——**跟 AI 說「幫我安裝」就好**：
 
-最簡單——讓 AI 幫你做：
+1. 開個新資料夾（例如「**我的 AI 辦公室**」）
+2. 開啟 Codex，cd 進去
+3. 把這個 GitHub 連結貼給 AI，跟它說：
 
-1. 在文件夾建一個新資料夾，例如「**我的 AI 辦公室**」
-2. 開啟 Codex，cd 進該資料夾
-3. 跟 AI 說：「**幫我從這個 GitHub 把 AI 辦公室拷貝下來**」
-   `https://github.com/Jiang-Yude/ai-office-jiang_yude_coach_v2026-0416`
-4. AI 會自動 `git clone` 整套放進來
+   > **「幫我安裝這個」**
+   > `https://github.com/Jiang-Yude/ai-office-jiang_yude_coach_v2026-0416`
 
-**好處**：跳過下載 zip 跟解壓縮、永遠拿到最新版、之後也能用 `git pull` 更新。
+4. AI 會自動把整套 AI 辦公室拷貝進來
+5. 完成後跟 AI 說「**咪卡在嗎**」開始用
 
-### 方法 B：下載 ZIP（不會用 git 的人）
+就這樣，跳過下載 ZIP 跟解壓縮。
 
-1. 點 GitHub 頁面綠色按鈕「**Code → Download ZIP**」
-2. 解壓縮到桌面或文件夾
-3. 開啟 Codex，cd 進該資料夾
+---
 
-### 方法 C：雲端硬碟下載（學員專屬）
+### 不會用 GitHub 也沒關係
 
-如果你是江江教練的學員，老師會在 LINE 群給雲端硬碟連結，下載資料夾即可。
+如果你完全不會用 GitHub，**雲端硬碟下載**也可以：
+
+- 江江教練的學員：LINE 群裡有雲端硬碟連結，下載資料夾即可
+- 一般人：到 GitHub 頁面點綠色按鈕「**Code → Download ZIP**」，解壓縮到電腦
 
 ---
 
